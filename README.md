@@ -10,7 +10,7 @@ Por cuestiones de temporización (15 minutos), solo contendrá los siguientes pu
   - Protocolos
   - Encapsulamiento
   - Primitivas
-  - Venajas
+  - Ventajas
 ### 3. Modelo OSI
   - Organización de los niveles
   - Sistemas terminales intermedios
