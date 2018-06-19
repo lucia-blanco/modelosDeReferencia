@@ -1,7 +1,277 @@
 <presentation [theme]="'light'">
 
   <slide>
+    <h1>Modelos de Referencia</h1>
+  </slide>
 
+  <slide>
+    <h2>Introducción</h2>
+  </slide>
+
+  <slide>
+    <h3>Origen y objetivos</h3>
+    <div class="texto">
+      <p>A principios de los 70, se desarrollan arquitecturas de red en capas.</p>
+      <p>Los <em>Modelos de referencia</em> consisten en la definición de las funciones de cada nivel y los interfaces.</p>
+    </div>
+  </slide>
+
+  <slide>
+    <h2>Arquitectura en capas</h2>
+  </slide>
+
+  <slide>
+    <h3>¿En qué consiste?</h3>
+    <div class="texto">
+      <p>Agrupar funciones en grupos relacionados.</p>
+      <p>Las funciones se dividen en subconjuntos, denominados capas.</p>
+    </div>
+
+  </slide>
+
+  <slide>
+    <h3>Protocolos</h3>
+    <div class="texto">
+      <ul>
+        <li>Semántica: se refiere al significado de cada sección de bits.</li>
+        <li>Sintaxis: incluye aspectos como el formato de datos.</li>
+        <li>Temporización: incluye la secuencación del mensaje.</li>
+      </ul>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Encapsulamiento</h3>
+    <div class="texto">
+      <p>Cada capa usa servicios de la capa inferior para poder transferir sus PDUs</p>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Primitivas</h3>
+    <div class="texto">
+      <ul>
+        <li>1. Request</li>
+        <li>2. Indication</li>
+        <li>3. Response</li>
+        <li>4. Confirmation</li>
+      </ul>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Ventajas</h3>
+    <div class="texto">
+      <ul>
+        <li>Simplificación del diseño.</li>
+        <li>Facilidad en las modificaciones del diseño.</li>
+        <li>Partición del diseño.</li>
+        <li>Interoperatividad.</li>
+      </ul>
+    </div>
+  </slide>
+
+  <slide>
+    <h2>Modelo OSI</h2>
+  </slide>
+
+  <slide>
+    <h3>Organización de los niveles</h3>
+    <img src="./assets/img/OSI_model_router.png">
+  </slide>
+
+  <slide>
+    <h3>Sistemas intermedios y terminales</h3>
+    <div class="text">
+      <p><span>Sistemas terminales:</span> Proporcionan funcionalidad completa desde las capas inferiores hasta las aplicaciones del usuario.</p>
+      <p><span>Sistemas intermedios:</span> Hacen posible la interconexión entre equipos terminales no adyacentes, implementando las funciones de conmutación y enrutamiento.</p>
+    </div>
+  </slide>
+
+  <slide>
+    <h2>Niveles del Modelo OSI</h2>
+  </slide>
+
+  <slide>
+    <h3>Nivel físico</h3>
+    <div class="texto">
+      <p>Coordina las funciones necesarias para transmitir el flujo de datos sobre un medio físico.</p>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Funciones</h3>
+    <div class="texto">
+      <ul>
+        <li>Características físicas de las interfaces y el medio.</li>
+        <li>Define el tipo de señal que se utilizará en la transmisión.</li>
+        <li>Define el tipo de codificación.</li>
+        <li>Tasa de datos.</li>
+        <li>Sincronización de los bits.</li>
+        <li>Configuración de la línea.</li>
+        <li>Topología física.</li>
+        <li>Modo de transmisión.</li>
+      </ul>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Nivel de enlace de datos</h3>
+    <div class="texto">
+      <p>Transforma el nivel físico, un simple medio de transmisión, en un enlace fiable.</p>
+      <p>Hace que el nivel físico aparezca ante el nivel superior como un medio libre de errores.</p>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Funciones</h3>
+    <div class="texto">
+      <ul>
+        <li>Entramado.</li>
+        <li>Direccionamiento físico.</li>
+        <li>Control de flujo.</li>
+        <li>Control de errores.</li>
+        <li>Control de acceso.</li>
+      </ul>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Nivel de red</h3>
+    <div class="texto">
+      <p>Responsable de la entrega de un paquete desde el origen al destino.</p>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Funciones</h3>
+    <div class="texto">
+      <ul>
+        <li>Direccionamiento lógico.</li>
+        <li>Encaminamiento.</li>
+      </ul>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Nivel de transporte</h3>
+    <div class="texto">
+      <p>Responsable de la entrega extremo a extremo del mensaje completo desde un proceso a otro.</p>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Funciones</h3>
+    <div class="texto">
+      <ul>
+        <li>Direccionamiento en punto de servicio.</li>
+        <li>Segmentación y reensamblado.</li>
+        <li>Control de conexión.</li>
+        <li>Control de flujo.</li>
+        <li>Control de errores.</li>
+      </ul>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Nivel de sesión</h3>
+    <div class="texto">
+      <p>Se encarga de autenticar al usuario y se puede configurar de forma que pueda recuperar el estado de la comunicación en caso de que ocurra algún problema.</p>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Funciones</h3>
+    <div class="texto">
+      <ul>
+        <li>Control de diálogo.</li>
+        <li>Sincronización.</li>
+      </ul>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Nivel de presentación</h3>
+    <div class="texto">
+      <p>Está relacionado con la sintaxis y la semántica de la información intercambiada entre los dos sistemas.</p>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Funciones</h3>
+    <div class="texto">
+      <ul>
+        <li>Representación.</li>
+        <li>Cifrado.</li>
+        <li>Compresión.</li>
+      </ul>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Nivel de aplicación</h3>
+    <div class="texto">
+      <p>Permite al usuario acceder a la red.</p>
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Funciones</h3>
+    <div class="texto">
+      <ul>
+        <li>Terminal virtual de red.</li>
+        <li>Transferencia, acceso y gestión de archivos.</li>
+        <li>Servicio de correo.</li>
+        <li>Servicios de directorio.</li>
+      </ul>
+    </div>
+  </slide>
+
+  <slide>
+    <h2>Equipos de interconexión</h2>
+  </slide>
+
+  <slide>
+    <h3>Repetidor</h3>
+    <div class="texto">
+      <p>Regenera la señal para ampliar una red local y compensa atenuación y distorsión de la señal.</p>
+      <img src="./assets/img/repetidor.jpg">
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Bridge</h3>
+    <div class="texto">
+      <p>Repetidor inteligente que filtra el tráfico que pasa de un puerto a otro.</p>
+      <img src="./assets/img/bridge.jpg" width="400px">
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Gateway</h3>
+    <div class="texto">
+      <p>Dispositivo inteligente que actúa a nivel de red o superior y traduce entre dos dominios</p>
+      <img src="./assets/img/residential-gateway.jpg" width="400px">
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Router</h3>
+    <div class="texto">
+      <p>Gateway capaz de decidir no solo el puerto de salida, sino cuáles serán los nodos subsiguientes de la ruta que deberá seguir el mensaje hasta alcanzar su destino.</p>
+      <img src="./assets/img/router-cisco.jpg" width="400px">
+    </div>
+  </slide>
+
+  <slide>
+    <h3>Switch</h3>
+    <div class="texto">
+      <p>Interconecta dos o más host de manera similar a los bridges, pasando datos de un segmento a otro.</p>
+      <img src="./assets/img/switch.jpg" width="400px">
+    </div>
+  </slide>
+
+  <slide>
   </slide>
 
   </presentation>
